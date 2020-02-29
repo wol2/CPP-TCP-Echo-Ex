@@ -37,6 +37,7 @@ int main()
     if (connect(clientSocket, (SOCKADDR*)&serverAddress, sizeof(serverAddress)) == SOCKET_ERROR)
         ShowErrorMessage("connect()");
     cout << "[현재 상태] connect()\n";
+
     // 반복적으로 서버로 메시지를 전송하고 에코 메시지를 전달 받습니다.
     while (1)
     {
